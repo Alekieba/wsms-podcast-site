@@ -1,0 +1,79 @@
+.col-md-12
+
+  %h1.cursive.text-center Latest Podcasts
+
+  %br
+  %br
+
+  .darken#something{'data-toggle' => "modal", 'data-target' => "#myModal"}
+    = image_tag 'image.jpg', class: 'thb text-center'
+    .podcast-title.title something
+    .podcast-date March 11, 201394578y
+  %br
+  %br
+  %br
+
+  .darken{'data-toggle' => "modal", 'data-target' => "#myModal2"}
+    = image_tag 'obama.jpg', class: 'thb text-center'
+    .podcast-title.title-2 something
+    .podcast-date March 11, 201394578y
+  %br
+  %br
+  %br
+
+  .darken{'data-toggle' => "modal", 'data-target' => "#myModal3"}
+    = image_tag 'greatleader.jpg', class: 'thb text-center'
+
+  #myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+    .modal-dialog
+      .modal-content
+        .modal-header
+          %button.close{"data-dismiss" => "modal", type: "button"}
+            %span{"aria-hidden" => "true"} ×
+            %span.sr-only= t('close')
+          %h4#myModalLabel.modal-title.text-center.title Title of Podcast 1
+        .modal-body.text-center
+          = image_tag 'image.jpg', class: 'thb text-center'
+          %br
+          %br
+          * Audio Player 1 goes here, perhaps remove image above. *
+          %br
+          %br
+          #markup
+            This is a podcast about Mr. Bator and how awesome he is... (this is the writeup, the description should go over the wide image as soon as I get it working)
+
+  #myModal2.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+    .modal-dialog
+      .modal-content
+        .modal-header
+          %button.close{"data-dismiss" => "modal", type: "button"}
+            %span{"aria-hidden" => "true"} ×
+            %span.sr-only= t('close')
+          %h4#myModalLabel.modal-title.text-center#title-2 Title of Podcast 2
+        .modal-body.text-center
+          = image_tag 'obama.jpg', class: 'thb text-center'
+          %br
+          %br
+          * Audio Player 2 goes here, perhaps remove image above. *
+          %br
+          %br
+          #markup-2
+            This is a podcast about Obama and how Obamalicious he is... (this is the writeup, the description should go over the wide image as soon as I get it working)
+
+  #myModal3.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+    .modal-dialog
+      .modal-content
+        .modal-header
+          %button.close{"data-dismiss" => "modal", type: "button"}
+            %span{"aria-hidden" => "true"} ×
+            %span.sr-only= t('close')
+          %h4#myModalLabel.modal-title.text-center#title-3 Title of Podcast 3
+        .modal-body.text-center
+          = image_tag 'greatleader.jpg', class: 'thb text-center'
+          %br
+          %br
+          * Audio Player 3 goes here, perhaps remove image above. *
+          %br
+          %br
+          #markup-3
+            This is a podcast about Kim Jong Un and how cheesy he is... (this is the writeup, the description should go over the wide image as soon as I get it working)
